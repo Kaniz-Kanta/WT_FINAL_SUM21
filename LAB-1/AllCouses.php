@@ -3,6 +3,9 @@ session_start();
 if(!isset($_SESSION["loggedUser"])){
 	header("Location: LogIn.php");
 }
+/*if(!isset($_COOKIE["loggeduser"])){
+		header("Location: index.php");
+	}*/
 ?>
 <html>
 	<body>

@@ -45,6 +45,7 @@
 		if(!$hasError){
 			foreach($users as $u=>$p){
 				if($uname==$u && $pass==$p){
+					//setcookie("loggeduser",$uname,time()+120);
 					$_SESSION["loggedUser"]=$uname;
 					header("Location: Dashboard.php");
 				}
