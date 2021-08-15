@@ -167,5 +167,15 @@
 		}
 		return false;
 	}
+	
+	function checkUsername($userName)
+	{
+		$query= "select UserName from users where UserName= '$userName'";
+		$rs= get($query);
+		if(count($rs)>0){
+			return true;
+		}
+		return false;
+	}
 
 ?>

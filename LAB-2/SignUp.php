@@ -15,8 +15,8 @@
 				</tr>
 				<tr>
 					<td align="right">Username</td>
-					<td>:<input name="userName" type="text" value="<?php echo $userName;?>"><br>
-					<span><?php echo $err_userName;?></span></td>
+					<td>:<input name="userName" type="text" onfocusout="checkUsername(this)" value="<?php echo $userName;?>"><br>
+					<span id="err_userName" class="text-danger"><?php echo $err_userName;?></span></td>
 				</tr>
 				<tr>
 					<td align="right">Password</td>
